@@ -1,1 +1,59 @@
+C:\Users\aluno.IPIRANGA\Kaic_Victor>node -v
+v20.11.1
 
+C:\Users\aluno.IPIRANGA\Kaic_Victor>npm -v
+10.2.4
+
+C:\Users\aluno.IPIRANGA\Kaic_Victor>npm install -D typescript
+
+added 1 package in 2s
+npm notice
+npm notice New minor version of npm available! 10.2.4 -> 10.8.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v10.8.2
+npm notice Run npm install -g npm@10.8.2 to update!
+npm notice
+
+C:\Users\aluno.IPIRANGA\Kaic_Victor>npm tsc -v
+10.2.4
+
+C:\Users\aluno.IPIRANGA\Kaic_Victor>npm install -D ts-node
+
+added 19 packages, and audited 21 packages in 4s
+
+found 0 vulnerabilities
+
+C:\Users\aluno.IPIRANGA\Kaic_Victor>npm ts-node -v
+10.2.4
+
+
+
+01.5 - Diferença entre npm e npx
+npm: É o gerenciador de pacotes do Node.js. Ele é usado para instalar, atualizar e gerenciar pacotes (ou módulos) de JavaScript e suas dependências. Com o npm, você pode instalar pacotes localmente (para o projeto) ou globalmente (para uso em qualquer lugar no sistema).
+
+Exemplos de uso:
+
+npm install <pacote>: Instala um pacote localmente no diretório do projeto.
+npm install -g <pacote>: Instala um pacote globalmente.
+npx: É uma ferramenta que vem com o npm a partir da versão 5.2.0. Seu propósito principal é executar pacotes diretamente sem precisar instalá-los globalmente. Isso é útil para executar scripts e comandos de pacotes que você talvez não queira manter instalados globalmente.
+
+Exemplos de uso:
+
+npx <comando>: Executa o comando de um pacote sem instalá-lo globalmente. Por exemplo, npx create-react-app my-app executa o comando create-react-app para criar um novo projeto React sem precisar instalar create-react-app globalmente.
+01.6 - Função do comando tsc
+tsc: É o compilador TypeScript. O comando tsc é usado para compilar arquivos TypeScript (.ts) em JavaScript (.js). Ele converte o código TypeScript, que pode incluir tipagem e outras funcionalidades específicas, para um JavaScript que pode ser executado em qualquer ambiente que suporte JavaScript.
+
+Exemplos de uso:
+
+tsc arquivo.ts: Compila o arquivo TypeScript arquivo.ts em um arquivo JavaScript.
+tsc --init: Cria um arquivo de configuração tsconfig.json que permite definir opções de compilação e incluir/excluir arquivos no processo de compilação.
+01.7 - Diferença entre -D e -g nos comandos npm install
+-D (ou --save-dev): Instala um pacote como uma dependência de desenvolvimento. Isso significa que o pacote é necessário apenas durante o desenvolvimento e não é incluído no ambiente de produção.
+
+Exemplo:
+
+npm install <pacote> -D: Instala <pacote> como uma dependência de desenvolvimento. Geralmente, pacotes como ferramentas de build, linters, e testes são instalados dessa forma.
+-g (ou --global): Instala um pacote globalmente, o que significa que o pacote está disponível em todo o sistema e não apenas no diretório do projeto atual. Isso é útil para ferramentas de linha de comando que você pode querer usar em vários projetos ou em qualquer lugar no seu terminal.
+
+Exemplo:
+
+npm install <pacote> -g: Instala <pacote> globalmente, tornando-o disponível para uso em qualquer diretório do sistema.
